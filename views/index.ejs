@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Pengguna</title>
+</head>
+
+<body>
+<fieldset>
+    <legend>Data Pengguna</legend>
+    <div class="container">
+        <% if (nama,umur,kota){ %>
+            <h1>Halo, Selamat datang <%=nama%> </h1>
+            <h2>Data kamu :</h2>
+            <table class="table" border="1">
+                <thead>
+                  <tr>
+                    <th width="100px" align="left">Nama</th>
+                    <td width="150px"><%= nama %></td>
+                  </tr>
+                  <tr>
+                    <th align="left">Umur</th>
+                    <td><%= umur %></td>
+                  </tr>
+                  <tr>
+                    <th align="left">Kota Tinggal</th>
+                    <td><%= kota %></td>
+                  </tr>
+                </thead>
+                </table>
+                <p>Jika ada data yang salah, <a href="/create">Ubah di sini</a></p>
+                
+          <%}else{%>
+              <h1>Halo, Selamat datang..</h1>
+              <a href="/create">Isi datamu di sini</a>
+          <%}%>
+  </div>
+</fieldset>
+  </body>
+</html>
