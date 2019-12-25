@@ -1,1 +1,3 @@
-"# Minggu=Ketiga" 
+"# Minggu-Ketiga" 
+
+Tugas Minggu Ketiga
